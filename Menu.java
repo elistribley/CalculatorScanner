@@ -9,14 +9,18 @@ public class Menu {
 	
 	public void menu() {
 		
+		boolean anotherMethod = true;
 		boolean menuFlag = true;
 		String menuOption = "";
 		int num1;
 		int num2;
-		
+		String name;
 		
 		
 		System.out.println("Welcome to the best calculator app ever!");
+		System.out.println(" What is your name?");
+		name = this.input.nextLine();
+		System.out.println("Welcome" + name);
 		
 		
 		while (menuFlag) {
@@ -84,7 +88,7 @@ public class Menu {
 			break;
 			
 		default:
-			System.out.println("Please try again!");
+			System.out.println("Wrong input! Please try another number!");
 			
 		
 		
